@@ -132,7 +132,7 @@ SELECT count(nome) as contar FROM tb_produtos;
 SELECT max(preco) as maior_preco FROM tb_produtos;
 
 SELECT tb_categorias.id, min(preco) as menor_preco FROM tb_produtos
-INNER JOIN tb_categorias 
+INNER JOIN tb_categorias tb_colaboradores
 ON tb_produtos.categoria_id = tb_categorias.id
 GROUP BY tb_categorias.id;
 
